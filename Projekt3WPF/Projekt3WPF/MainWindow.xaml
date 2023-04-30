@@ -1,0 +1,36 @@
+﻿<Window x:Class="Projekt3WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt3WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" >
+    <Grid>
+        <Menu IsMainMenu="True" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <MenuItem Header="Gady" Click="MenuItem_Click"/>
+            <MenuItem Header="Ssaki" Click="MenuItem_Click"/>
+            <MenuItem Header="Ryby" Click="MenuItem_Click"/>
+            <MenuItem Header="Płazy" Click="MenuItem_Click"/>
+        </Menu>
+
+        <Grid x:Name="grid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="back" Grid.Row="2" Content="&lt;" Width="60" Height="40" Click="Button_Click"/>
+            <Button x:Name="next" Grid.Column="1" Grid.Row="2" Content=">" Width="60" Height="40" Click="Button_Click_1"/>
+        </Grid>
+           
+        
+
+
+        
+    </Grid>
+</Window>
